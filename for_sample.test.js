@@ -23,3 +23,11 @@ test('forOf test', () => {
 test('forIn test', () => {
   expect(ForSample.forIn()).toBe("abc")
 });
+
+test('forEach Object test', () => {
+  expect(ForSample.forEachObject()).toBe("aあbいcう")
+});
+
+test('forIn Object test', () => {
+  expect(ForSample.forInObject()).toBe("aあbいcう")
+});

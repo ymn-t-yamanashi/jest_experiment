@@ -45,6 +45,24 @@ ForSample = {
             str = str + array[i]
         }
         return str
-    }
+    },
+    forEachObject() {
+        let str = ""
+        let object = { a: "あ", b: "い", c: "う" }
+        let keys = Object.keys(object)
+
+        keys.forEach((key) => {
+            str = str + key + object[key]
+        })
+        return str
+    },
+    forInObject() {
+        let str = ""
+        let object = { a: "あ", b: "い", c: "う" }
+        for (let i in object) {
+            str = str + i + object[i]
+        }
+        return str
+    },
 }
 module.exports = ForSample
