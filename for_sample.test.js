@@ -11,3 +11,15 @@ test('forBreak test', () => {
 test('forContinue test', () => {
   expect(ForSample.forContinue()).toBe("13")
 });
+
+test('forEach test', () => {
+  expect(ForSample.forEach()).toBe("abc")
+});
+
+test('forOf test', () => {
+  expect(ForSample.forOf()).toBe("abc")
+});
+
+test('forIn test', () => {
+  expect(ForSample.forIn()).toBe("abc")
+});
